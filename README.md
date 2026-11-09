@@ -13,13 +13,21 @@ The site deliberately focuses on product discovery and validation. ARGUS, educat
 
 ## Local preview
 
-Serve the repository root with any static web server, for example:
+Install the development dependency and start the local site:
 
 ```powershell
-python -m http.server 4173
+npm install
+npm run dev
 ```
 
-Then open `http://localhost:4173`.
+Open the local URL printed by Vite, normally `http://localhost:5173`.
+
+To verify the production build:
+
+```powershell
+npm run build
+npm run preview
+```
 
 ## Deployment note
 
